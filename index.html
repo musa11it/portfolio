@@ -1,346 +1,331 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musa Itangishatse - UI/UX Designer & Full-Stack Developer</title>
+    <title>Musa Itangishatse | Full-Stack, UI/UX & Cybersecurity</title>
+    <meta name="description" content="Portfolio of Musa Itangishatse, full-stack developer, UI/UX designer, and cybersecurity professional from Rwanda.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <!-- Navigation -->
+<body class="dark-mode">
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">MI</div>
+        <div class="container navbar-inner">
+            <a href="#home" class="nav-brand">MI</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-en="Home" data-rw="Ahabanza">Home</a></li>
-                <li><a href="#about" class="nav-link" data-en="About" data-rw="Icyo Nacu">About</a></li>
-                <li><a href="#experience" class="nav-link" data-en="Experience" data-rw="Ubwenge">Experience</a></li>
-                <li><a href="#skills" class="nav-link" data-en="Skills" data-rw="Imikorere">Skills</a></li>
-                <li><a href="#education" class="nav-link" data-en="Education" data-rw="Amashuri">Education</a></li>
-                <li><a href="#contact" class="nav-link" data-en="Contact" data-rw="Gusobanura">Contact</a></li>
+                <li><a href="#home" class="nav-link active" data-en="Home" data-rw="Ahabanza" data-fr="Accueil">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-rw="Icyo Nacu" data-fr="À propos">About</a></li>
+                <li><a href="#education" class="nav-link" data-en="Education" data-rw="Amashuri" data-fr="Éducation">Education</a></li>
+                <li><a href="#experience" class="nav-link" data-en="Experience" data-rw="Ubwenge" data-fr="Expérience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-rw="Imishinga" data-fr="Projets">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-rw="Imikorere" data-fr="Compétences">Skills</a></li>
+                <li><a href="#awards" class="nav-link" data-en="Awards" data-rw="Ibihembo" data-fr="Distinctions">Awards</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-rw="Gusobanura" data-fr="Contact">Contact</a></li>
             </ul>
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <span class="lang-divider">/</span>
-                <button class="lang-btn" data-lang="rw">RW</button>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark / light mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="rw">RW</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </div>
             </div>
         </div>
-    </nav>
+    </nav> 
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image-wrapper">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow" data-en="" data-rw="Umukoro" data-fr="Portfolio"></span>
+                <h1 data-en="Musa Itangishatse" data-rw="Musa Itangishatse" data-fr="Musa Itangishatse">Musa Itangishatse</h1>
+                <p class="hero-subtitle" data-en="UI/UX Designer, Full-Stack Developer & Cybersecurity Specialist" data-rw="Umwanditsi wa UI/UX, Uwanditsi w'Inzira & Umuhanga wa Cybersecurity" data-fr="Designer UI/UX, Développeur Full-Stack & Spécialiste Cybersécurité"></p>
+                <p class="hero-description" data-en="I create memorable digital experiences, build secure applications, and launch projects that help students and communities grow." data-rw="Nshyira hamwe uburambe bw'umukoresha, ndubaka porogaramu zizewe, kandi nteza imbere imishinga ifasha abanyeshuri n'umuryango." data-fr="Je crée des expériences digitales marquantes, développe des applications sécurisées et lance des projets qui aident les étudiants et les communautés.">I create memorable digital experiences, build secure applications, and launch projects that help students and communities grow.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-en="Explore Projects" data-rw="Reba Imishinga" data-fr="Voir les projets">Explore Projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-rw="Hamagara" data-fr="Contactez-moi">Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-value">12+</span>
+                        <span class="stat-label" data-en="Projects" data-rw="Imishinga" data-fr="Projets">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">8+</span>
+                        <span class="stat-label" data-en="Honors" data-rw="Ibihembo" data-fr="Distinctions">Honors</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://studyinfo.space" target="_blank" aria-label="Studyinfo website" title="Studyinfo"><i class="fas fa-globe"></i></a>
+                    <a href="https://www.linkedin.com/in/itangishatse-musa-384596288" target="_blank" aria-label="LinkedIn profile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:itangishatsemusa@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-card">
+                <div class="hero-image-frame">
                     <img src="me.jpeg" alt="Musa Itangishatse" class="hero-image">
                 </div>
-                <h1 class="hero-title" data-en="Musa Itangishatse" data-rw="Musa Itangishatse">Musa Itangishatse</h1>
-                <p class="hero-subtitle" data-en="UI/UX Designer | Full-Stack Developer | Cybersecurity Professional" data-rw="Umwanditsi w'Inzira y'Umugi | Uwanditsi w'Iyohereza y'Sosiyete | Icyakora Kurinda Inyigisho">UI/UX Designer | Full-Stack Developer | Cybersecurity Professional</p>
-                <p class="hero-description" data-en="Creative and detail-oriented UI/UX Designer and Full-Stack Developer with hands-on experience designing and developing user-centered web and mobile applications" data-rw="Umwanditsi w'inzira y'umugi w'ubwenge bwacu n'uwanditsi w'iyohereza y'sosiyete witagira ihanga w'ubwenge bwa wacu n'ubwenge bwacu">Creative and detail-oriented UI/UX Designer and Full-Stack Developer with hands-on experience designing and developing user-centered web and mobile applications</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-rw="Kuhuza">Get in Touch</a>
-                    <a href="#experience" class="btn btn-secondary" data-en="View My Work" data-rw="Reba Umukoro">View My Work</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-en="About Me" data-rw="Icyo Nacu">About Me</h2>
-            <div class="about-content">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-rw="Icyo Nacu" data-fr="À propos de moi">About Me</h2>
+                <p class="section-subtitle" data-en="Driven by design, technology, and community impact." data-rw="Nkurikije igishushanyo, ikoranabuhanga, n'ingaruka ku muryango." data-fr="Motivé par le design, la technologie et l'impact communautaire.">Driven by design, technology, and community impact.</p>
+            </div>
+            <div class="about-grid">
                 <div class="about-text">
-                    <p data-en="I'm a creative and detail-oriented UI/UX Designer and Full-Stack Developer with hands-on experience designing and developing user-centered web and mobile applications. With proficiency in Figma for wireframing, prototyping, and high-fidelity design, I translate user needs into visually compelling, intuitive interfaces." data-rw="Ndize umwanditsi w'inzira y'umugi n'uwanditsi w'iyohereza y'sosiyete witagira ihanga w'ubwinge bwa wacu n'ubwinge bwacu.">I'm a creative and detail-oriented UI/UX Designer and Full-Stack Developer with hands-on experience designing and developing user-centered web and mobile applications. With proficiency in Figma for wireframing, prototyping, and high-fidelity design, I translate user needs into visually compelling, intuitive interfaces.</p>
-                    <p data-en="Currently advancing my full-stack and mobile development skills, I bring a strong foundation in cybersecurity, networking, and database management. As a student at A2SV (Africa to Silicon Valley) specializing in Data Structures and Algorithms, I'm committed to becoming a software engineer who solves complex problems with elegant, efficient solutions." data-rw="Nkoramutima kwiga imikorere y'iyohereza y'sosiyete n'ubwinge bwa Android. Ndi munyeshuri wa A2SV (Africa to Silicon Valley) wibazirishe Data Structures and Algorithms, n'icyo nacu ni kuba Software Engineer.">Currently advancing my full-stack and mobile development skills, I bring a strong foundation in cybersecurity, networking, and database management. As a student at A2SV (Africa to Silicon Valley) specializing in Data Structures and Algorithms, I'm committed to becoming a software engineer who solves complex problems with elegant, efficient solutions.</p>
+                    <p data-en="A passionate UI/UX Designer and Full-Stack Developer with experience in creating user-centered digital solutions. Currently working at Litt+ as a UI/UX Designer and Full-Stack Developer, and serving as a trainer at Smart Solution in software development." data-rw="Umwanditsi w'inzira y'umugi n'umwanditsi w'iyohereza y'sosiyete witagira ihanga w'ubwenge bwa wacu. Nkorera Litt+ nk'umwanditsi wa UI/UX n'umwanditsi w'iyohereza y'sosiyete, kandi nkora nk'umwigisha muri Smart Solution mu ikoranabuhanga." data-fr="Designer UI/UX passionné et développeur Full-Stack avec une expérience dans la création de solutions digitales centrées sur l'utilisateur. Actuellement employé chez Litt+ en tant que Designer UI/UX et Développeur Full-Stack, et formateur chez Smart Solution en développement logiciel.">A passionate UI/UX Designer and Full-Stack Developer with experience in creating user-centered digital solutions. Currently working at Litt+ as a UI/UX Designer and Full-Stack Developer, and serving as a trainer at Smart Solution in software development.</p>
+                    <p data-en="I bring a strong foundation in cybersecurity, networking, and database management. As a student at A2SV specializing in Data Structures and Algorithms, I'm committed to becoming a software engineer who solves complex problems with elegant, efficient solutions." data-rw="Ndi mfite ubumenyi mu ikoranabuhanga, umutekano wa cyber, n'inyandiko. Nk'umunyeshuri wa A2SV wibazirishe Data Structures and Algorithms, nicyo nacu ni kuba Software Engineer w'umwuga." data-fr="J'apporte une solide base en cybersécurité, réseaux et gestion de bases de données. En tant qu'étudiant à A2SV spécialisé en Structures de Données et Algorithmes, je m'engage à devenir un ingénieur logiciel qui résout des problèmes complexes avec des solutions élégantes et efficaces.">I bring a strong foundation in cybersecurity, networking, and database management. As a student at A2SV specializing in Data Structures and Algorithms, I'm committed to becoming a software engineer who solves complex problems with elegant, efficient solutions.</p>
                 </div>
-                <div class="about-info">
-                    <div class="info-item">
-                        <span class="info-label" data-en="Location" data-rw="Aho Ndimutuye">Location</span>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <span class="info-title" data-en="Location" data-rw="Aho Ndimutuye" data-fr="Lieu">Location</span>
                         <span class="info-value">Nyarugenge, Kigali, Rwanda</span>
                     </div>
-                    <div class="info-item">
-                        <span class="info-label" data-en="Phone" data-rw="Simu">Phone</span>
-                        <span class="info-value"><a href="tel:+250787065734">+250 787 065 734</a></span>
+                    <div class="info-card">
+                        <span class="info-title" data-en="Current Role" data-rw="Umwanya Ubu" data-fr="Rôle actuel">Current Role</span>
+                        <span class="info-value" data-en="UI/UX Designer & Full-Stack Developer" data-rw="Umwanditsi wa UI/UX & Uwanditsi w'Iyohereza" data-fr="Designer UI/UX & Développeur Full-Stack">UI/UX Designer & Full-Stack Developer</span>
                     </div>
-                    <div class="info-item">
-                        <span class="info-label" data-en="Email" data-rw="Imeli">Email</span>
-                        <span class="info-value"><a href="mailto:itangishatsemusa@gmail.com">itangishatsemusa@gmail.com</a></span>
+                    <div class="info-card">
+                        <span class="info-title" data-en="Website" data-rw="Urubuga" data-fr="Site web">Website</span>
+                        <a href="https://studyinfo.space" target="_blank" class="info-link">studyinfo.space</a>
                     </div>
-                    <div class="info-item">
-                        <span class="info-label" data-en="Portfolio" data-rw="Umukoro">Portfolio</span>
-                        <span class="info-value"><a href="https://espoireda.org" target="_blank">espoireda.org</a></span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label" data-en="Education" data-rw="Amashuri">Current Education</span>
-                        <span class="info-value"><a href="https://a2sv.org" target="_blank" style="color: var(--primary-color);">A2SV - Data Structures & Algorithms</a></span>
+                    <div class="info-card">
+                        <span class="info-title" data-en="LinkedIn" data-rw="LinkedIn" data-fr="LinkedIn">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/itangishatse-musa-384596288" target="_blank" class="info-link">itangishatse-musa</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <section id="education" class="education">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> <span data-en="Education" data-rw="Amashuri" data-fr="Éducation">Education</span></h2>
+                <p class="section-subtitle" data-en="My academic journey and professional certifications." data-rw="Urugendo rw'amashuri yanjye n'impamyabumenyi z'umwuga." data-fr="Mon parcours académique et certifications professionnelles.">My academic journey and professional certifications.</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3 data-en="University of Rwanda" data-rw="Kaminuza y'u Rwanda" data-fr="Université du Rwanda">University of Rwanda</h3>
+                    <p data-en="Bachelor's in Information Technology" data-rw="Impamyabumenyi mu Ikoranabuhanga" data-fr="Licence en Technologies de l'Information">Bachelor's in Information Technology</p>
+                    <span class="education-period">2023 – Currently</span>
+                </div>
+                <div class="education-card">
+                    <h3 data-en="A2SV at University of Rwanda" data-rw="A2SV kuri Kaminuza y'u Rwanda" data-fr="A2SV à l'Université du Rwanda">A2SV at University of Rwanda</h3>
+                    <p data-en="Data Structures and Algorithms" data-rw="Imiterere y'Ibyatanzwe n'Igikoresho" data-fr="Structures de Données et Algorithmes">Data Structures and Algorithms</p>
+                    <span class="education-period">2025 – Currently</span>
+                </div>
+                <div class="education-card">
+                    <h3 data-en="Klab" data-rw="Klab" data-fr="Klab">Klab</h3>
+                    <p data-en="Full Stack and Mobile Application Development" data-rw="Ikoranabuhanga ry'Imbuga y'Inzira n'Ikoranabuhanga ry'Imbuga ngendanwa" data-fr="Développement Full Stack et Applications Mobiles">Full Stack and Mobile Application Development</p>
+                    <span class="education-period">Graduated 2025</span>
+                </div>
+                <div class="education-card">
+                    <h3 data-en="ALX" data-rw="ALX" data-fr="ALX">ALX</h3>
+                    <p data-en="Virtual Assistance" data-rw="Ubufasha bw'ikoranabuhanga" data-fr="Assistance Virtuelle">Virtual Assistance</p>
+                    <span class="education-period">Completed 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title" data-en="Professional Experience" data-rw="Ubwenge Bwa Kazi">Professional Experience</h2>
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> <span data-en="Experience" data-rw="Ubwenge" data-fr="Expérience">Experience</span></h2>
+                <p class="section-subtitle" data-en="Building digital solutions and mentoring the next generation." data-rw="Gukora ibisubizo bya dijitali no kwigisha urubyiruko." data-fr="Construire des solutions digitales et former la prochaine génération.">Building digital solutions and mentoring the next generation.</p>
+            </div>
             <div class="experience-list">
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title" data-en="UI/UX Designer & Full-Stack Developer" data-rw="Umwanditsi w'Inzira y'Umugi & Uwanditsi w'Iyohereza y'Sosiyete">UI/UX Designer & Full-Stack Developer</h3>
-                        <span class="experience-period">2023 – 2025</span>
+                        <h3 class="experience-title" data-en="UI/UX Designer & Full-Stack Developer" data-rw="Umwanditsi wa UI/UX & Uwanditsi w'Iyohereza" data-fr="Designer UI/UX & Développeur Full-Stack">UI/UX Designer & Full-Stack Developer</h3>
+                        <span class="experience-period">2024 – Present</span>
                     </div>
-                    <p class="experience-company">Espoireda.org, Kigali, Rwanda</p>
+                    <p class="experience-company">Litt+ Company, Kigali, Rwanda</p>
                     <ul class="experience-details">
-                        <li data-en="Designed the full user interface of espoireda.org using Figma, establishing visual hierarchy, color palette, and component library before development" data-rw="Wanditse/Guhanga inzira y'umugi wa espoireda.org ukoresheje Figma">Designed the full user interface of espoireda.org using Figma, establishing visual hierarchy, color palette, and component library before development</li>
-                        <li data-en="Developed the platform using TypeScript, React, and Django; served as Database Administrator ensuring data integrity and secure access" data-rw="Yanditse platform ukoresheje TypeScript, React, na Django">Developed the platform using TypeScript, React, and Django; served as Database Administrator ensuring data integrity and secure access</li>
-                        <li data-en="Collaborated with stakeholders to align design decisions with brand identity and community goals" data-rw="Gusangira n'abakozi kugira ngo ibyo wanditse bihuze n'ibyo gusezerakanya">Collaborated with stakeholders to align design decisions with brand identity and community goals</li>
+                        <li data-en="Designing user interfaces and developing full-stack applications for client projects." data-rw="Gushushanya interineti z'abakoresha no gukora porogaramu z'iyohereza y'sosiyete ku bigo by'abakiriya." data-fr="Concevoir des interfaces utilisateur et développer des applications full-stack pour des projets clients.">Designing user interfaces and developing full-stack applications for client projects.</li>
+                        <li data-en="Collaborating with teams to deliver high-quality digital products." data-rw="Gukorana n'amatsinda kugira ngo twange ibikorwa bya dijitali by'umwuga." data-fr="Collaborer avec des équipes pour livrer des produits digitaux de haute qualité.">Collaborating with teams to deliver high-quality digital products.</li>
                     </ul>
                 </div>
-
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title" data-en="Founder & Platform Designer/Developer" data-rw="Umukora & Umwanditsi w'Inzira/Iyohereza">Founder & Platform Designer/Developer</h3>
+                        <h3 class="experience-title" data-en="Trainer in Software Development" data-rw="Umwigisha mu Ikoranabuhanga" data-fr="Formateur en Développement Logiciel">Trainer in Software Development</h3>
+                        <span class="experience-period">2024 – Present</span>
+                    </div>
+                    <p class="experience-company">Smart Solution, Kigali, Rwanda</p>
+                    <ul class="experience-details">
+                        <li data-en="Teaching software development skills to students and professionals." data-rw="Kwigisha imikorere y'ikoranabuhanga ku banyeshuri n'abakozi." data-fr="Enseigner les compétences en développement logiciel aux étudiants et professionnels.">Teaching software development skills to students and professionals.</li>
+                        <li data-en="Mentoring in UI/UX design and full-stack development practices." data-rw="Kwigisha mu igishushanyo cya UI/UX n'imikorere y'iyohereza y'sosiyete." data-fr="Mentorer en design UI/UX et pratiques de développement full-stack.">Mentoring in UI/UX design and full-stack development practices.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title" data-en="Founder & Platform Designer/Developer" data-rw="Umukora & Umwanditsi w'Inzira/Iyohereza" data-fr="Fondateur & Designer/Développeur de Plateforme">Founder & Platform Designer/Developer</h3>
                         <span class="experience-period">2022 – Present</span>
                     </div>
                     <p class="experience-company">Studyinfo.space (Thekist), Kigali, Rwanda</p>
                     <ul class="experience-details">
-                        <li data-en="Conceptualized and designed the user experience for studyinfo.space, connecting high school graduates with Rwandan universities" data-rw="Guhanga inzira y'umugi wa studyinfo.space">Conceptualized and designed the user experience for studyinfo.space, connecting high school graduates with Rwandan universities</li>
-                        <li data-en="Designed and built the platform using PHP, JavaScript, and TypeScript with a focus on intuitive navigation and clean visual design" data-rw="Yanditse platform ukoresheje PHP, JavaScript, na TypeScript">Designed and built the platform using PHP, JavaScript, and TypeScript with a focus on intuitive navigation and clean visual design</li>
-                        <li data-en="Managed database systems and platform operations, providing direct technical support to users" data-rw="Gonagana sisitemu y'inyandiko n'imikorere y'iyohereza">Managed database systems and platform operations, providing direct technical support to users</li>
+                        <li data-en="Conceptualized and designed the user experience for studyinfo.space, connecting high school graduates with Rwandan universities." data-rw="Guhanga inzira y'umugi wa studyinfo.space, guhuza abarangije amashuri yisumbuye na za kaminuza z'u Rwanda." data-fr="Conceptualisé et conçu l'expérience utilisateur pour studyinfo.space, reliant les diplômés du secondaire aux universités rwandaises.">Conceptualized and designed the user experience for studyinfo.space, connecting high school graduates with Rwandan universities.</li>
+                        <li data-en="Designed and built the platform using PHP, JavaScript, and TypeScript with a focus on intuitive navigation." data-rw="Yanditse platform ukoresheje PHP, JavaScript, na TypeScript, ifite inzira yoroshye." data-fr="Conçu et construit la plateforme en utilisant PHP, JavaScript et TypeScript avec un focus sur la navigation intuitive.">Designed and built the platform using PHP, JavaScript, and TypeScript with a focus on intuitive navigation.</li>
                     </ul>
                 </div>
-
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title" data-en="Coordinator, Innovation Tech Club" data-rw="Muguzi, Ikinema cy'Ubwenge">Coordinator, Innovation Tech Club</h3>
+                        <h3 class="experience-title" data-en="Coordinator, Innovation Tech Club" data-rw="Muguzi, Ikinema cy'Ubwenge" data-fr="Coordinateur, Club Tech Innovation">Coordinator, Innovation Tech Club</h3>
                         <span class="experience-period">2023 – 2025</span>
                     </div>
                     <p class="experience-company">University of Rwanda – CST, Kigali, Rwanda</p>
                     <ul class="experience-details">
-                        <li data-en="Organized workshops on web design, programming, cybersecurity, and networking for student members" data-rw="Gushyiraho amahoro y'amafunzo ku rwego rw'ubwinge">Organized workshops on web design, programming, cybersecurity, and networking for student members</li>
-                        <li data-en="Led student innovation challenges, fostering collaborative problem-solving and design thinking" data-rw="Yobora abanyeshuri mu bigwegwe bya ubwinge">Led student innovation challenges, fostering collaborative problem-solving and design thinking</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title" data-en="Networking & Datacom Trainee" data-rw="Umwigize w'Ifatiro n'Inyandiko">Networking & Datacom Trainee</h3>
-                        <span class="experience-period">Aug – Oct 2024</span>
-                    </div>
-                    <p class="experience-company">Huawei Academy, Online</p>
-                    <ul class="experience-details">
-                        <li data-en="Completed HCIA, HCIP & HCIE Datacom training in advanced networking and enterprise systems" data-rw="Kurangiza amafunzo yita HCIA, HCIP & HCIE">Completed HCIA, HCIP & HCIE Datacom training in advanced networking and enterprise systems</li>
+                        <li data-en="Organized workshops on web design, programming, cybersecurity, and networking." data-rw="Gushyiraho amahoro y'amafunzo ku rwego rw'ubwinge, ikoranabuhanga, umutekano wa cyber, n'ifatiro." data-fr="Organisé des ateliers sur le design web, la programmation, la cybersécurité et les réseaux.">Organized workshops on web design, programming, cybersecurity, and networking.</li>
+                        <li data-en="Led student innovation challenges, fostering collaborative problem-solving." data-rw="Yobora abanyeshuri mu bigwegwe bya ubwinge, gufasha gukemura ibibazo hamwe." data-fr="Dirigé des défis d'innovation étudiante, favorisant la résolution collaborative de problèmes.">Led student innovation challenges, fostering collaborative problem-solving.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <section id="projects" class="projects">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-code"></i> <span data-en="Featured Projects" data-rw="Imishinga Y'ingenzi" data-fr="Projets phares">Featured Projects</span></h2>
+                <p class="section-subtitle" data-en="Web, mobile and platform work built to deliver clear value for learners and organizations." data-rw="Imishinga ya interineti, mobile n'uburyo bwatanzwe kugira ngo itange agaciro ku biga n'ibigo." data-fr="Travaux web, mobile et plateforme conçus pour apporter de la valeur aux apprenants et organisations.">Web, mobile and platform work built to deliver clear value for learners and organizations.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-meta"><span class="project-tag" data-en="Live" data-rw="Kubakora" data-fr="En ligne">Live</span></div>
+                    <h3 class="project-title" data-en="Studyinfo.space" data-rw="Studyinfo.space" data-fr="Studyinfo.space">Studyinfo.space</h3>
+                    <p data-en="A student portal and educational marketplace connecting high school graduates with Rwandan universities and admissions resources." data-rw="Urubuga rw'abanyeshuri n'isoko ry'uburezi ruhuza abarangije amashuri yisumbuye na za kaminuza z'u Rwanda." data-fr="Un portail étudiant et marketplace éducative reliant les diplômés du secondaire aux universités rwandaises et ressources d'admission.">A student portal and educational marketplace connecting high school graduates with Rwandan universities and admissions resources.</p>
+                    <a href="https://studyinfo.space" target="_blank" class="project-link" data-en="Visit site" data-rw="Sura urubuga" data-fr="Visiter le site">Visit site</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-meta"><span class="project-tag project-tag-alt" data-en="Design" data-rw="Igishushanyo" data-fr="Design">Design</span></div>
+                    <h3 class="project-title" data-en="Espoireda.org" data-rw="Espoireda.org" data-fr="Espoireda.org">Espoireda.org</h3>
+                    <p data-en="A community platform designed to support youth mentorship, training and resources for careers in tech and entrepreneurship." data-rw="Urubuga rw'umuryango rwashushanyijwe gufasha urubyiruko mu kwigishwa no kubona amahugurwa mu ikoranabuhanga n'ubucuruzi." data-fr="Une plateforme communautaire visant à accompagner les jeunes par le mentorat, la formation et les ressources en tech et entrepreneuriat.">A community platform designed to support youth mentorship, training and resources for careers in tech and entrepreneurship.</p>
+                    <a href="https://espoireda.org" target="_blank" class="project-link" data-en="View case" data-rw="Reba uko byakozwe" data-fr="Voir le cas">View case</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-meta"><span class="project-tag" data-en="Network" data-rw="Network" data-fr="Réseau">Network</span></div>
+                    <h3 class="project-title" data-en="Huawei ICT Competition" data-rw="Huawei ICT Competition" data-fr="Huawei ICT Competition">Huawei ICT Competition</h3>
+                    <p data-en="1st Prize Regional Winner for Network Track. Represented Rwanda with a powerful team strategy and technical execution." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network. Nahagarariye u Rwanda hamwe n'itsinda rikomeye mu ikoranabuhanga." data-fr="1er prix régional dans la catégorie Réseau. Représenté le Rwanda avec une stratégie et une exécution technique solides.">1st Prize Regional Winner for Network Track. Represented Rwanda with a powerful team strategy and technical execution.</p>
+                    <a href="https://www.huawei.com" target="_blank" class="project-link" data-en="Learn more" data-rw="Menya byinshi" data-fr="En savoir plus">Learn more</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title" data-en="Skills & Expertise" data-rw="Imikorere & Ubwenge">Skills & Expertise</h2>
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-tools"></i> <span data-en="Skills & Expertise" data-rw="Imikorere & Ubwenge" data-fr="Compétences & expertise">Skills & Expertise</span></h2>
+                <p class="section-subtitle" data-en="Full-stack, design and infrastructure capabilities that power strong product delivery." data-rw="Ubushobozi bwa full-stack, igishushanyo n'ibikorwaremezo bituma umusaruro ukora neza." data-fr="Capacités full-stack, design et infrastructure qui permettent une livraison produit solide.">Full-stack, design and infrastructure capabilities that power strong product delivery.</p>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-en="UI/UX Design" data-rw="Ubwanditsi bw'Inzira y'Umugi">UI/UX Design</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Wireframing</span>
-                        <span class="skill-tag">Prototyping</span>
-                        <span class="skill-tag">Component Design</span>
-                        <span class="skill-tag">Auto-layout</span>
-                        <span class="skill-tag">User Interface Design</span>
-                        <span class="skill-tag">Responsive Layouts</span>
-                        <span class="skill-tag">Visual Hierarchy</span>
-                        <span class="skill-tag">Typography & Color Theory</span>
-                        <span class="skill-tag">Dashboard Design</span>
-                        <span class="skill-tag">UX Research</span>
-                        <span class="skill-tag">Accessibility</span>
-                    </div>
+                <div class="skill-card">
+                    <h3 data-en="UI / UX" data-rw="UI / UX" data-fr="UI / UX">UI / UX</h3>
+                    <p data-en="Figma, Prototyping, Wireframing, Accessibility, Responsive Systems." data-rw="Figma, Prototyping, Wireframing, Accessibility, Responsive Systems." data-fr="Figma, prototypage, wireframing, accessibilité, systèmes responsives.">Figma, Prototyping, Wireframing, Accessibility, Responsive Systems.</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-en="Programming Languages" data-rw="Ururimi rw'Iyohereza">Programming Languages</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">C</span>
-                    </div>
+                <div class="skill-card">
+                    <h3 data-en="Web Development" data-rw="Gukora Interineti" data-fr="Développement web">Web Development</h3>
+                    <p data-en="React, TypeScript, JavaScript, PHP, Django, REST APIs." data-rw="React, TypeScript, JavaScript, PHP, Django, REST APIs." data-fr="React, TypeScript, JavaScript, PHP, Django, API REST.">React, TypeScript, JavaScript, PHP, Django, REST APIs.</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-en="Frameworks & Libraries" data-rw="Imigurire & Ifashe">Frameworks & Libraries</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">Django</span>
-                    </div>
+                <div class="skill-card">
+                    <h3 data-en="Mobile & Platforms" data-rw="Mobile & Platforms" data-fr="Mobile & plateformes">Mobile & Platforms</h3>
+                    <p data-en="React Native, responsive apps, digital tools and student-facing platforms." data-rw="React Native, porogaramu zikwiranye, ibikoresho bya dijitali n'urubuga rw'abanyeshuri." data-fr="React Native, applications adaptatives, outils digitaux et plateformes étudiantes.">React Native, responsive apps, digital tools and student-facing platforms.</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-en="Databases" data-rw="Inyandiko z'Inyigisho">Databases</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-en="Other Expertise" data-rw="Ubwenge Burindi">Other Expertise</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">AWS Cloud</span>
-                        <span class="skill-tag">Cybersecurity</span>
-                        <span class="skill-tag">Networking</span>
-                        <span class="skill-tag">IoT</span>
-                        <span class="skill-tag">Machine Learning</span>
-                    </div>
+                <div class="skill-card">
+                    <h3 data-en="Infrastructure" data-rw="Ibikorwa" data-fr="Infrastructure">Infrastructure</h3>
+                    <p data-en="Networking, Cybersecurity, AWS fundamentals, databases and cloud deployment." data-rw="Networking, Cybersecurity, AWS, databases n'ishyirwa mu bicu." data-fr="Réseaux, cybersécurité, bases AWS, bases de données et déploiement cloud.">Networking, Cybersecurity, AWS fundamentals, databases and cloud deployment.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title" data-en="Education & Certifications" data-rw="Amashuri & Ibihembo">Education & Certifications</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3 class="education-title" data-en="BSc (Hons) Information Technology" data-rw="Impamyabwenge y'Ubwinge bwa Kompyuta">BSc (Hons) Information Technology</h3>
-                    <p class="education-institution" data-en="University of Rwanda – CST, Kigali" data-rw="Kaminuza y'u Rwanda – CST, Kigali">University of Rwanda – CST, Kigali</p>
-                    <p class="education-details">
-                        <strong>Relevant Coursework:</strong> UI/UX, Web Development, Python, JavaScript, TypeScript, Java, React Native, PHP, Django, Networking, IoT, Cybersecurity
-                    </p>
-                </div>
+    <section id="awards" class="awards">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> <span data-en="Honors & Awards" data-rw="Ibihembo & Umuhigo" data-fr="Honneurs & récompenses">Honors & Awards</span></h2>
+                <p class="section-subtitle" data-en="Achievements recognized by industry leaders and academic programs." data-rw="Ibyagezweho byamenyekanye n'abayobozi b'inganda n'amashuri." data-fr="Réalisations reconnues par des leaders de l'industrie et des programmes académiques.">Achievements recognized by industry leaders and academic programs.</p>
             </div>
-
-            <div class="certifications">
-                <h3 class="section-subtitle" data-en="Professional Certifications" data-rw="Ibihembo by'Ubwenge">Professional Certifications</h3>
-                <div class="certification-list">
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Rwanda National Cyber Security Authority (NCSA) - Certified in Cybersecurity</span>
-                        <small>May-Jun 2025</small>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>KLab Rwanda - TechUp Full-Stack & Mobile Development Program</span>
-                        <small>2025</small>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Cisco Networking Academy - Networking & Cybersecurity (x2)</span>
-                        <small>2023–2024</small>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Huawei Academy - HCIA, HCIP & HCIE Datacom Networking</span>
-                        <small>2024</small>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>ALX - Software Engineering & Leadership Training</span>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Raspberry Pi Pico Internet of Things (IoT) Development</span>
-                    </div>
-                </div>
+            <div class="award-grid">
+                <article class="award-card">
+                    <img src="award.jpeg" alt="Award" class="award-image">
+                    <h3 data-en="Huawei ICT Competition" data-rw="Huawei ICT Competition" data-fr="Huawei ICT Competition">Huawei ICT Competition</h3>
+                    <p data-en="1st Prize Regional Winner in the Network Track with the Rwanda team." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network hamwe n'itsinda rya Rwanda." data-fr="1er prix régional dans la catégorie Réseau avec l'équipe Rwanda.">1st Prize Regional Winner in the Network Track with the Rwanda team.</p>
+                </article>
+                <article class="award-card">
+                    <h3 data-en="NCSA Cybersecurity" data-rw="NCSA Cybersecurity" data-fr="Cybersécurité NCSA">NCSA Cybersecurity</h3>
+                    <p data-en="Certified by the Rwanda National Cyber Security Authority for network security excellence." data-rw="Yemejwe n'ikigo cy'u Rwanda gishinzwe umutekano wa cyber ku bwiza bw'umutekano." data-fr="Certifié par l'Autorité nationale rwandaise de cybersécurité pour l'excellence en sécurité réseau.">Certified by the Rwanda National Cyber Security Authority for network security excellence.</p>
+                </article>
+                <article class="award-card">
+                    <h3 data-en="Cisco Networking Academy" data-rw="Cisco Networking Academy" data-fr="Academie Cisco">Cisco Networking Academy</h3>
+                    <p data-en="Completed HCIA, HCIP and HCIE Datacom training in advanced networking systems." data-rw="Narangiye amahugurwa ya HCIA, HCIP na HCIE Datacom mu miyoboro yateye imbere." data-fr="Formation HCIA, HCIP et HCIE Datacom complétée dans les systèmes réseau avancés.">Completed HCIA, HCIP and HCIE Datacom training in advanced networking systems.</p>
+                </article>
+                <article class="award-card">
+                    <h3 data-en="A2SV Scholarship" data-rw="Bursary ya A2SV" data-fr="Bourse A2SV">A2SV Scholarship</h3>
+                    <p data-en="Selected for Africa to Silicon Valley to advance software engineering and algorithm skills." data-rw="Natoranyijwe muri A2SV kugirango nkomereze ubumenyi mu software engineering n'algorithmes." data-fr="Sélectionné par Africa to Silicon Valley pour développer des compétences en ingénierie logicielle et en algorithmes.">Selected for Africa to Silicon Valley to advance software engineering and algorithm skills.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Languages Section -->
-    <section class="languages">
-        <div class="container">
-            <h2 class="section-title" data-en="Languages" data-rw="Ururimi">Languages</h2>
-            <div class="languages-grid">
-                <div class="language-item">
-                    <span class="language-name" data-en="Kinyarwanda" data-rw="Ikinyarwanda">Kinyarwanda</span>
-                    <span class="language-level" data-en="Native" data-rw="Ururimi RW">Native</span>
-                </div>
-                <div class="language-item">
-                    <span class="language-name" data-en="English" data-rw="Icyongereza">English</span>
-                    <span class="language-level" data-en="Fluent" data-rw="Neza">Fluent</span>
-                </div>
-                <div class="language-item">
-                    <span class="language-name" data-en="Arabic" data-rw="Icyarabu">Arabic</span>
-                    <span class="language-level" data-en="Conversational" data-rw="Kugira ikirango">Conversational</span>
-                </div>
-                <div class="language-item">
-                    <span class="language-name" data-en="Swahili" data-rw="Iciswahili">Swahili</span>
-                    <span class="language-level" data-en="Conversational" data-rw="Kugira ikirango">Conversational</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-en="Let's Connect" data-rw="Kuhuza Hamwe">Let's Connect</h2>
-            <div class="contact-content">
-                <p class="contact-description" data-en="I'm always interested in hearing about new projects and opportunities. Feel free to reach out!" data-rw="Ntashyire kubona umukoro mushya n'amahitamo. Andikire kuri mfon kamyo.">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
-                
-                <div class="contact-wrapper">
-                    <!-- Contact Methods -->
-                    <div class="contact-methods">
-                        <a href="mailto:itangishatsemusa@gmail.com" class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>itangishatsemusa@gmail.com</span>
-                        </a>
-                        <a href="tel:+250787065734" class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <span>+250 787 065 734</span>
-                        </a>
-                        <a href="https://github.com/musa11it" target="_blank" class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/musa11it</span>
-                        </a>
-                        <a href="https://espoireda.org" target="_blank" class="contact-method">
-                            <i class="fas fa-globe"></i>
-                            <span>espoireda.org</span>
-                        </a>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" data-en="Name" data-rw="Izina">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-en="Email" data-rw="Imeli">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" data-en="Subject" data-rw="Icyo Andikira">Subject</label>
-                            <input type="text" id="subject" name="subject" required placeholder="Message Subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-en="Message" data-rw="Ubutumwa">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-rw="Oherezaho Ubutumwa">Send Message</button>
-                        <div class="form-status" id="formStatus"></div>
-                    </form>
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> <span data-en="Let's Connect" data-rw="Tugiraneho" data-fr="Restons en contact">Let's Connect</span></h2>
+                <p class="section-subtitle" data-en="Reach out for collaborations, mentorship, project work or media inquiries." data-rw="Hitamo kugirana ubufatanye, ubujyanama, imishinga cyangwa ibibazo by'itangazamakuru." data-fr="Contactez-moi pour collaborations, mentorat, projets ou demandes médias.">Reach out for collaborations, mentorship, project work or media inquiries.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card contact-info-list">
+                    <h3 data-en="Contact Info" data-rw="Amakuru yo guhamagara" data-fr="Infos contact">Contact Info</h3>
+                    <a href="mailto:itangishatsemusa@gmail.com" class="contact-link" aria-label="Email" title="Email"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="tel:+250787065734" class="contact-link" aria-label="Phone" title="Phone"><i class="fas fa-phone"></i> Phone</a>
+                    <a href="https://studyinfo.space" target="_blank" class="contact-link" aria-label="Website" title="Website"><i class="fas fa-globe"></i> Studyinfo.space</a>
+                    <a href="https://www.linkedin.com/in/itangishatse-musa-384596288" target="_blank" class="contact-link" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-en="Name" data-rw="Izina" data-fr="Nom">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-en="Email" data-rw="Imeli" data-fr="Email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject" data-rw="Ingingo" data-fr="Sujet">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Message Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-rw="Ubutumwa" data-fr="Message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-en="Send Message" data-rw="Ohereza" data-fr="Envoyer">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Musa Itangishatse. All rights reserved.</p>
+        <div class="container footer-grid">
+            <p>&copy; 2025 <strong>Musa Itangishatse</strong>. All rights reserved.</p>
+            <div class="footer-meta">
+                <span class="footer-count"><i class="fas fa-users"></i> <span id="footerVisitorCount">0</span> visitors</span>
+                <div class="footer-socials">
+                    <a href="https://studyinfo.space" target="_blank" aria-label="Website" title="Website"><i class="fas fa-globe"></i><span class="sr-only">Studyinfo</span></a>
+                    <a href="https://www.linkedin.com/in/itangishatse-musa-384596288" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
+                </div>
+            </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
