@@ -1089,6 +1089,27 @@ body.dark-mode .footer-socials a {
     color: #cbd5e1;
 }
 
+body.dark-mode .education-card p {
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+body.dark-mode .education-card h3 {
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+}
+
+body.dark-mode .education-period {
+    color: #06b6d4;
+    font-weight: 600;
+}
+
+body.dark-mode .contact-link {
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
 body.dark-mode .btn-secondary {
     border-color: rgba(255, 255, 255, 0.16);
 }
@@ -1097,6 +1118,71 @@ body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
     background: rgba(255, 255, 255, 0.08);
     color: #e2e8f0;
+}
+
+/* Light Mode Styles */
+body:not(.dark-mode) .education {
+    background: #f8fafc;
+}
+
+body:not(.dark-mode) .education-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .education-card h3 {
+    color: #1e293b;
+}
+
+body:not(.dark-mode) .education-card p {
+    color: #475569;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+body:not(.dark-mode) .contact-link {
+    color: #1e293b;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+}
+
+body:not(.dark-mode) .contact-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+body:not(.dark-mode) .education-period {
+    color: #3b82f6;
+}
+
+body:not(.dark-mode) .contact {
+    background: #f8fafc;
+}
+
+body:not(.dark-mode) .contact-card.contact-info-list {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .contact-card.contact-info-list h3 {
+    color: #1e293b;
+}
+
+body:not(.dark-mode) .contact-link {
+    color: #1e293b;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .contact-link i {
+    color: inherit;
+}
+
+body:not(.dark-mode) .contact-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode .form-group label {
