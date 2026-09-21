@@ -29,10 +29,17 @@
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark / light mode">
                     <i class="fas fa-sun"></i>
                 </button>
-                <div class="language-switcher">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="rw">RW</button>
-                    <button class="lang-btn" data-lang="fr">FR</button>
+                <div class="language-switcher" id="languageSwitcher">
+                    <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="Change language" title="Change language">
+                        <i class="fas fa-globe"></i>
+                        <span class="lang-current">EN</span>
+                        <i class="fas fa-chevron-down lang-caret"></i>
+                    </button>
+                    <ul class="lang-menu" id="langMenu" role="menu">
+                        <li role="none"><button role="menuitem" class="lang-option active" data-lang="en" data-code="EN">English</button></li>
+                        <li role="none"><button role="menuitem" class="lang-option" data-lang="rw" data-code="RW">Kinyarwanda</button></li>
+                        <li role="none"><button role="menuitem" class="lang-option" data-lang="fr" data-code="FR">Français</button></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -113,6 +120,13 @@
                 <p class="section-subtitle" data-en="My academic journey and professional certifications." data-rw="Urugendo rw'amashuri yanjye n'impamyabumenyi z'umwuga." data-fr="Mon parcours académique et certifications professionnelles.">My academic journey and professional certifications.</p>
             </div>
             <div class="education-grid">
+                <div class="education-card education-card-featured">
+                    <img src="cmu-bridge-program.jpeg" alt="Musa Itangishatse at Carnegie Mellon University Africa" class="education-image">
+                    <h3 data-en="Carnegie Mellon University Africa" data-rw="Carnegie Mellon University Africa" data-fr="Carnegie Mellon University Africa">Carnegie Mellon University Africa</h3>
+                    <p data-en="Bridge Program – Software Engineering Immersion" data-rw="Porogaramu ya Bridge – Kwimenyereza Ubwubatsi bwa Software" data-fr="Programme Bridge – Immersion en génie logiciel">Bridge Program – Software Engineering Immersion</p>
+                    <span class="education-period">Summer 2026</span>
+                    <p class="education-note" data-en="Selected for the CMU-Africa Bridge Program, where I strengthened my skills in software engineering, problem solving and professional readiness alongside top African tech talent." data-rw="Natoranyijwe muri porogaramu ya Bridge ya CMU-Africa, aho nagize amahirwe yo kongera ubumenyi mu bwubatsi bwa software, gukemura ibibazo, no kwitegura umwuga hamwe n'abandi bahanga bo muri Afurika." data-fr="Sélectionné pour le programme Bridge de CMU-Africa, où j'ai renforcé mes compétences en génie logiciel, résolution de problèmes et préparation professionnelle aux côtés des meilleurs talents technologiques africains.">Selected for the CMU-Africa Bridge Program, where I strengthened my skills in software engineering, problem solving and professional readiness alongside top African tech talent.</p>
+                </div>
                 <div class="education-card">
                     <h3 data-en="University of Rwanda" data-rw="Kaminuza y'u Rwanda" data-fr="Université du Rwanda">University of Rwanda</h3>
                     <p data-en="Bachelor's in Information Technology" data-rw="Impamyabumenyi mu Ikoranabuhanga" data-fr="Licence en Technologies de l'Information">Bachelor's in Information Technology</p>
@@ -203,19 +217,28 @@
                     <div class="project-meta"><span class="project-tag" data-en="Live" data-rw="Kubakora" data-fr="En ligne">Live</span></div>
                     <h3 class="project-title" data-en="Studyinfo.space" data-rw="Studyinfo.space" data-fr="Studyinfo.space">Studyinfo.space</h3>
                     <p data-en="A student portal and educational marketplace connecting high school graduates with Rwandan universities and admissions resources." data-rw="Urubuga rw'abanyeshuri n'isoko ry'uburezi ruhuza abarangije amashuri yisumbuye na za kaminuza z'u Rwanda." data-fr="Un portail étudiant et marketplace éducative reliant les diplômés du secondaire aux universités rwandaises et ressources d'admission.">A student portal and educational marketplace connecting high school graduates with Rwandan universities and admissions resources.</p>
-                    <a href="https://studyinfo.space" target="_blank" class="project-link" data-en="Visit site" data-rw="Sura urubuga" data-fr="Visiter le site">Visit site</a>
+                    <a href="https://studyinfo.space" target="_blank" rel="noopener" class="project-link stretched-link" data-en="Visit site" data-rw="Sura urubuga" data-fr="Visiter le site"><span>Visit site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </article>
                 <article class="project-card">
                     <div class="project-meta"><span class="project-tag project-tag-alt" data-en="Design" data-rw="Igishushanyo" data-fr="Design">Design</span></div>
                     <h3 class="project-title" data-en="Espoirda.org" data-rw="Espoireda.org" data-fr="Espoirda.org">Espoirda.org</h3>
                     <p data-en="A community platform designed to support youth mentorship, training and resources for careers in tech and entrepreneurship." data-rw="Urubuga rw'umuryango rwashushanyijwe gufasha urubyiruko mu kwigishwa no kubona amahugurwa mu ikoranabuhanga n'ubucuruzi." data-fr="Une plateforme communautaire visant à accompagner les jeunes par le mentorat, la formation et les ressources en tech et entrepreneuriat.">A community platform designed to support youth mentorship, training and resources for careers in tech and entrepreneurship.</p>
-                    <a href="https://espoirda.org" target="_blank" class="project-link" data-en="View case" data-rw="Reba uko byakozwe" data-fr="Voir le cas">View case</a>
+                    <a href="https://espoirda.org" target="_blank" rel="noopener" class="project-link stretched-link" data-en="View case" data-rw="Reba uko byakozwe" data-fr="Voir le cas"><span>View case</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-tag" data-en="Software Developer" data-rw="Umuhanga muri Software" data-fr="Développeur logiciel">Software Developer</span>
+                        <span class="project-period">2024 – Present</span>
+                    </div>
+                    <h3 class="project-title" data-en="Dtechel.rw" data-rw="Dtechel.rw" data-fr="Dtechel.rw">Dtechel.rw</h3>
+                    <p data-en="A technology startup delivering scalable, secure and efficient IT and software solutions that streamline operations and drive digital transformation for businesses. I work as a software developer building and maintaining client systems." data-rw="Isosiyete ya tekinoroji itanga ibisubizo bya IT na software byizewe kandi bikora neza, bifasha ibigo gukorana n'ikoranabuhanga kugira ngo bateze imbere imikorere yabo. Nkorera nk'umuhanga muri software nubaka kandi nkurikirana sisitemu z'abakiriya." data-fr="Une startup technologique qui fournit des solutions IT et logicielles évolutives, sécurisées et efficaces, permettant aux entreprises de rationaliser leurs opérations et de réussir leur transformation numérique. J'y travaille comme développeur logiciel, construisant et maintenant les systèmes des clients.">A technology startup delivering scalable, secure and efficient IT and software solutions that streamline operations and drive digital transformation for businesses. I work as a software developer building and maintaining client systems.</p>
+                    <a href="https://dtechel.rw" target="_blank" rel="noopener" class="project-link stretched-link" data-en="Visit site" data-rw="Sura urubuga" data-fr="Visiter le site"><span>Visit site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </article>
                 <article class="project-card">
                     <div class="project-meta"><span class="project-tag" data-en="Network" data-rw="Network" data-fr="Réseau">Network</span></div>
                     <h3 class="project-title" data-en="Huawei ICT Competition" data-rw="Huawei ICT Competition" data-fr="Huawei ICT Competition">Huawei ICT Competition</h3>
-                    <p data-en="1st Prize Regional Winner for Network Track. Represented Rwanda with a powerful team strategy and technical execution." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network. Nahagarariye u Rwanda hamwe n'itsinda rikomeye mu ikoranabuhanga." data-fr="1er prix régional dans la catégorie Réseau. Représenté le Rwanda avec une stratégie et une exécution technique solides.">1st Prize Regional Winner for Network Track. Represented Rwanda with a powerful team strategy and technical execution.</p>
-                    <a href="https://www.huawei.com" target="_blank" class="project-link" data-en="Learn more" data-rw="Menya byinshi" data-fr="En savoir plus">Learn more</a>
+                    <p data-en="1st Prize Regional Winner for Network Track, advancing to the Global Final in China. Represented Rwanda with a powerful team strategy and technical execution." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network, dukomeza no ku muhigo mpuzamahanga muri China. Nahagarariye u Rwanda hamwe n'itsinda rikomeye mu ikoranabuhanga." data-fr="1er prix régional dans la catégorie Réseau, qualifié pour la finale mondiale en Chine. Représenté le Rwanda avec une stratégie et une exécution technique solides.">1st Prize Regional Winner for Network Track, advancing to the Global Final in China. Represented Rwanda with a powerful team strategy and technical execution.</p>
+                    <a href="https://www.huawei.com" target="_blank" rel="noopener" class="project-link stretched-link" data-en="Learn more" data-rw="Menya byinshi" data-fr="En savoir plus"><span>Learn more</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </article>
             </div>
         </div>
@@ -256,9 +279,17 @@
             </div>
             <div class="award-grid">
                 <article class="award-card">
-                    <img src="award.jpeg" alt="Award" class="award-image">
+                    <div class="award-image-group">
+                        <img src="award.jpeg" alt="Huawei ICT Competition 2025-2026 1st Prize award graphic" class="award-image">
+                        <img src="huawei-ict-global-final.jpeg" alt="Musa Itangishatse and the Rwanda team at the Huawei ICT Competition Global Final in China" class="award-image">
+                    </div>
                     <h3 data-en="Huawei ICT Competition" data-rw="Huawei ICT Competition" data-fr="Huawei ICT Competition">Huawei ICT Competition</h3>
-                    <p data-en="1st Prize Regional Winner in the Network Track with the Rwanda team." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network hamwe n'itsinda rya Rwanda." data-fr="1er prix régional dans la catégorie Réseau avec l'équipe Rwanda.">1st Prize Regional Winner in the Network Track with the Rwanda team.</p>
+                    <p data-en="1st Prize Regional Winner in the Network Track with the Rwanda team, advancing to the Global Final in China." data-rw="Igikombe cya mbere mu karere mu cyiciro cya Network hamwe n'itsinda rya Rwanda, dukomeza ku muhigo mpuzamahanga muri China." data-fr="1er prix régional dans la catégorie Réseau avec l'équipe Rwanda, qualifié pour la finale mondiale en Chine.">1st Prize Regional Winner in the Network Track with the Rwanda team, advancing to the Global Final in China.</p>
+                </article>
+                <article class="award-card">
+                    <img src="ministry-of-education.jpeg" alt="Musa Itangishatse honored by the Rwanda Minister of Education, Joseph Nsengimana" class="award-image">
+                    <h3 data-en="Ministry of Education Recognition" data-rw="Guhembwa n'Minisiteri y'Uburezi" data-fr="Reconnaissance du Ministère de l'Éducation">Ministry of Education Recognition</h3>
+                    <p data-en="Honored by Hon. Joseph Nsengimana, Rwanda's Minister of Education, for representing Rwanda at the Huawei ICT Competition." data-rw="Yashimiwe na Minisitiri w'Uburezi, Joseph Nsengimana, kubera guhagararira u Rwanda muri Huawei ICT Competition." data-fr="Honoré par le Ministre de l'Éducation du Rwanda, Joseph Nsengimana, pour avoir représenté le Rwanda au Huawei ICT Competition.">Honored by Hon. Joseph Nsengimana, Rwanda's Minister of Education, for representing Rwanda at the Huawei ICT Competition.</p>
                 </article>
                 <article class="award-card">
                     <h3 data-en="NCSA Cybersecurity" data-rw="NCSA Cybersecurity" data-fr="Cybersécurité NCSA">NCSA Cybersecurity</h3>
